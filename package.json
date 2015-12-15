@@ -1,0 +1,58 @@
+{
+  "name": "react-spa",
+  "version": "0.1.0",
+  "description": "A study demo for react",
+  "main": "server.js",
+  "scripts": {
+    "build": "gulp",
+    "dev": "node server.js",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandergis/react-spa.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "gulp",
+    "redux",
+    "react-router"
+  ],
+  "author": "wandergis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wandergis/react-spa/issues"
+  },
+  "homepage": "https://github.com/wandergis/react-spa#readme",
+  "dependencies": {
+    "history": "1.13.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-mixin": "^3.0.3",
+    "react-router": "^1.0.2",
+    "webpack-zepto": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "cssnext-loader": "^1.0.1",
+    "del": "^2.2.0",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "html-webpack-plugin": "^1.7.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
