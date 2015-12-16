@@ -10,7 +10,7 @@ var plugins = [
   new HtmlWebpackPlugin({
     title: "React学习demo",
     template: "tpl.html",
-    filename: "index.html",
+    filename: "../index.html",
     hash: true
   }),
   //将样式统一发布到style.css中
@@ -21,8 +21,7 @@ var plugins = [
   // 使用 ProvidePlugin 加载使用率高的依赖库
   new webpack.ProvidePlugin({
     $: 'webpack-zepto'
-  }),
-  new webpack.HotModuleReplacementPlugin()
+  })
 ];
 var config = {
   debug: true,
@@ -32,13 +31,13 @@ var config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: ''
+    publicPath: 'dist/'
   },
   module: {
     loaders: [{
       test: /\.jsx?$/, // 用正则来匹配文件路径，这段意思是匹配 js 或者 jsx
       exclude: [node_modules_dir],
-      loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015'], // 加载模块 "babel" 是 "babel-loader" 的缩写,加载react热代码替换
+      loader: 'babel', // 加载模块 "babel" 是 "babel-loader" 的缩写
       include: path.join(__dirname, 'src')
     }, {
       test: /\.css$/, //css后缀的文件
