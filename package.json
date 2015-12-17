@@ -1,5 +1,5 @@
 {
-  "name": "react-spa",
+  "name": "react-spa-study",
   "version": "0.1.0",
   "description": "A study demo for react",
   "main": "server.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wandergis/react-spa.git"
+    "url": "git+https://github.com/wandergis/react-spa-study.git"
   },
   "keywords": [
     "react",
@@ -22,9 +22,9 @@
   "author": "wandergis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wandergis/react-spa/issues"
+    "url": "https://github.com/wandergis/react-spa-study/issues"
   },
-  "homepage": "https://github.com/wandergis/react-spa#readme",
+  "homepage": "https://github.com/wandergis/react-spa-study#readme",
   "dependencies": {
     "es6-promise": "^3.0.2",
     "express": "^4.13.3",
