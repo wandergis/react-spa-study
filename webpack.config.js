@@ -10,7 +10,7 @@ var plugins = [
   new HtmlWebpackPlugin({
     title: "React学习demo",
     template: "tpl.html",
-    filename: "../index.html",
+    filename: "index.html",
     hash: true
   }),
   //将样式统一发布到style.css中
@@ -31,7 +31,7 @@ var config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: 'dist/'
+    publicPath: ''
   },
   module: {
     loaders: [{
